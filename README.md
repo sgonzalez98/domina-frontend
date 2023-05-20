@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Para correr el frontend es de forma muy sencilla, mediante estos comandos.
 
 ```bash
 npm run dev
@@ -12,23 +12,34 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+se debe tener en cuenta que ya debe estar configurado el archivo .env, el cual tiene una copia en .env.example, solo es clonarlo a .env e iniciar el proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para visualizar el sitio web
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Funcionalidades
 
-## Learn More
+En el requerimiento de la tarea, se solicito usar la ultima version de react. actualmente en su documentación oficial, ReactJs, recomienda trabar con los marcos desarrollados sobre este, para una mejor experiencia de desarrollo, debido a esto el proyecto esta creado en NextJs.
 
-To learn more about Next.js, take a look at the following resources:
+- Sobre este nuevo marco, aunque trabaja sobre react, su arquitectura cambia, y aunque me considero excelente en react, debo aclarar que apenas estoy aprendiendo NextJs y hay cosas que aun se me dificultan adaptar de React
+- Se realiza proteccion de rutas con Middleware
+- Se integra Jwt
+- Se integra Manejo de Coockies para token y datos de usuario
+- Se usa contexto para informacion global de la aplicacion
+- No se usa ningun Paquete de estilos, solo se utilizan estilos globales y modulares en Css
+- Para facilitar la lectura del proyecto y su evaluacion, todos los componentes son nativos, den HTML, no se uso ninguna libreria de componentes hechos, debido a que estos pueden coplejisar el codigo y su entendimiento
+- Se integra layout, en este caso un navbar global para las rutas auntenticadas
+- Se trabaja con typescript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## TODO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Hay varias novedades que se deben mejorar ya que no pude hacerlas en el tiempo de la prueba
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Hay algunos lugares de la web, donde el css debe ser corregido, ya que no funciona el responsive o se ven mal
+- Separacion de codigo
+- Reutilizacion de componentes
+- Uso del patro de diseño atomico (Atomic Design)
+- Uso del potencial de Next, como ServerRendering, StaticSites
+- Crear un servicio general de peticiones
+- Crear un servicio de comunucacion A coockies
+- Crear un servicio de manejo de eventos o errores
+- Crear un servicio de notificaciones generales

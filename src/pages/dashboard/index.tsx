@@ -6,6 +6,7 @@ import { useSnackbar } from "notistack";
 import { IContextType } from "@/types/types.context";
 import { ITodo } from "@/types/types.todo";
 import { getCookie } from "cookies-next";
+import FormTodo from "./formTodo";
 
 function Dashboard() {
   const { user } = useContext(AuthContext) as IContextType;
@@ -88,6 +89,7 @@ function Dashboard() {
 
   return (
     <div className={styles.container}>
+      <FormTodo loadData={loadTodos} />
       <h2>Tareas Pendientes</h2>
       <ul className={styles.table}>
         {pending.map((todo) => (

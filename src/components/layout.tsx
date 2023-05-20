@@ -30,7 +30,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/dashboard">Dashboard</Link>
               </li>
               <li>
-                <Link href="/users">Usuarios</Link>
+                <Link href="/dashboard/users">Usuarios</Link>
               </li>
               <li>
                 <Link href={""} onClick={cerrarSesion}>

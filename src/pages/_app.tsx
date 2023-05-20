@@ -6,7 +6,7 @@ import Context from "@/context/appContext";
 import { SnackbarProvider } from "notistack";
 
 const MyApp = ({ Component, pageProps, ...appProps }: AppProps) => {
-  if ([`/dashboard`].includes(appProps.router.pathname)) {
+  if (appProps.router.pathname.includes("/dashboard")) {
     return (
       <Context>
         <SnackbarProvider>

@@ -70,8 +70,8 @@ export default function Login() {
             type="email"
             {...register("email", { required: true })}
           />
-          {errors?.name && (
-            <span className={styles.span}>El nombre es requerido</span>
+          {errors?.email && (
+            <span className={styles.span}>El Email es requerido</span>
           )}
           <input placeholder="Telefono" type="number" {...register("phone")} />
           <input

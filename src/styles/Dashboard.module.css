@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 60%;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.todoItemDone {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todoButton {
+  color: #5DADE2;
+  background-color: #f0f0f0;
+}
+
+.buttonDelete {
+  color: red;
+  margin-left: 1rem;
+  background-color: #f0f0f0;
+}
